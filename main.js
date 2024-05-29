@@ -10,7 +10,7 @@
 
     setTimeout(() => {
       const n = Math.floor(Math.random() * 5);
-      const results = ["大吉", "中吉", "吉", "凶", "大凶"];
+      const results = ["大大吉", "超大吉", "大大大吉", "大吉", "大大大凶"];
       result.textContent = results[n];
 
       result.style.opacity = 1;

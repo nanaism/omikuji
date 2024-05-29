@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+main {
+  width: 240px;
+  margin: 32px auto;
+  background: linear-gradient(to bottom, #fff0f0, #ebf4bf);
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  border: 4px double red;
+  text-align: center;
+  color: red;
+  padding: 16px;
+  background: rgba(99, 182, 203, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(143, 198, 210, 0.2);
+  transition: all 0.3s ease;
+}
+
+section:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  margin: 0;
+  border-bottom: 2px solid red;
+  font-weight: bold;
+  padding: 8px 0;
+  font-family: "Georgia", serif;
+  background: linear-gradient(to right, #ff6666, #ff0000);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 36px;
+  font-family: "Georgia", serif;
+  padding: 24px 0;
+  background: linear-gradient(to right, #ff6666, #ff0000);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+button {
+  all: unset;
+  width: 100%;
+  background-color: red;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  margin-top: 16px;
+  cursor: pointer;
+  font-family: "Georgia", serif;
+  box-shadow: 0px 4px #7a0000;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+  background: linear-gradient(to bottom, #ff0000, #cc0000);
+}
+
+button:active {
+  box-shadow: 0 1px #7a0000;
+  transform: translateY(3px);
+}
+
+button::before {
+  content: "⭐";
+  margin-right: 8px;
+  animation: twinkle 1.5s infinite;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* 追加のCSS */
+#result.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
